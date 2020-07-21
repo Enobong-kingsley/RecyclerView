@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactDetails">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/detailImage"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/percy"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/detailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enobong Kingsley"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/detailImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/phoneDetail"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/detailName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="08155676415"
+        android:gravity="start"
+        android:paddingTop="40dp"
+        android:background="#F7F7F7"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_baseline_add_ic_call_24"
+
+        />
+
+
+    <Button
+        android:id="@+id/detailLocation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/phoneDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Nigeria"
+        android:gravity="start"
+        android:paddingTop="40dp"
+        android:background="#F7F7F7"
+        android:drawableLeft="@drawable/ic_baseline_add_location_24"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
